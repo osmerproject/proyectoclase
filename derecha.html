@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrar Div</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 100vh;
+        }
+        #rectangulo {
+            width: 40%;
+            height: 100%;
+            background-color: #f0f0f0;
+            position: relative;
+        }
+        #boton {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: #0074d9;
+            color: #ffffff;
+            padding: 20px; /* Aumentamos el tamaño del botón */
+            border: none;
+            cursor: pointer;
+        }
+        #parrafo {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 16px; /* Tamaño de fuente para el párrafo */
+        }
+    </style>
+</head>
+<body>
+    <div id="rectangulo">
+        <p id="parrafo">Este es un párrafo en la parte superior derecha.</p>
+        <button id="boton">Botón</button>
+    </div>
+</body>
+</html>
